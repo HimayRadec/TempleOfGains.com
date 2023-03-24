@@ -9,21 +9,29 @@ nav {
   display: flex;
   background-color: lightskyblue;
   border: 1px solid black;
-  align-content: space-between;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 2em;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-logo {
   font-size: 2em;
 }
-.nav-links {
 
+.nav-links {
+  padding: 15px;
 }
 
-.nav-links ul a {
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 200%;
+  background-color: black;
+  padding: 0px 25px;
+  border: 1px dashed green;
+  margin: 0;
+}
+
+nav a:hover {
+  color: rgb(55, 55, 55);
+  transition: color 0.3s linear;
 }
