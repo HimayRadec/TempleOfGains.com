@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* for all pages */
+body footer,
+body footer p,
+body footer p a {
+    padding-top: 5px;
+    text-align: center;
+    color: black;
+}
+
+li,
+a,
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EDF0F1;
+    text-decoration: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a,
+.nav_links a {
+    transition: all 0.3s ease 0s;
+    font-size: 120%;
+}
+
+.navbar a {
+    font-size: 200%;
+    padding: 0%;
+    margin: 0;
+}
+
+/* did not work lol */
+a:is(:link, :active, :visited).active {
+    color: red;
+    background-color: red;
+    text-decoration: line-through;
+}
+
+.nav_links li a:hover,
+.nav_links a:hover {
+    color: #949494;
+}
+
+#mainFooter,
+#mainFooter p,
+#mainFooter p a {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    padding: 5px;
+}
+
+#button {
+    padding: 10px;
+    border: solid 4px;
+    border-radius: 25px;
+    border-color: #FFFFFF;
+}
+
+#button a:hover {
+    color: #949494;
+    transition: all 0.3s ease 0s;
+}
+
+.information,
+.information p,
+.information li {
+    font-size: 1.2em;
+    color: black;
+    text-align: start;
+}
+
+.pageWrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.pageMuscleWrapper {
+    width: 98vw;
+    margin: 0 auto;
+}
+
+.pageWrapperConsultation {
+    background-color: rgb(255, 255, 255);
+}
+
+.form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.form input,
+.form textarea {
+    margin: 8px auto;
+    text-align: center;
+    width: 25vw;
+    height: 70px;
+    font-size: 2em;
+    font-weight: 900;
+    border: solid black 5px;
+    border-radius: 30px;
+    color: black;
+}
+
+.form textarea {
+    height: 250px;
+}
+
+.submitButton {
+    background-color: #949494;
+    
+}
+
+.submitButton:hover {
+    font-size: 3em;
+    transition: 0.3s linear;
+}
+
+.submitButton:active,
+.header a:active {
+    background-color: #000000;
+    color: white;
+    transition: 0.3s linear;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 15px;
+    font-size: 4em;
+    width: fit-content;
+    margin: 8px auto;
+}
+
+.header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #dcdcdc;
+    border-radius: 25px;
+    border: solid 5px;
+    margin: 20px auto;
+}
+
+.header a {
+    color: #000000;
+    font-size: 1.2em;
+}
+
+#CommonSupplements {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 4em;
+}
+
+.SupplementInfo {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.SupplementInfo div {
+    width: 80vw;
+    height: 80vh;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SupplementInfo iframe {
+    margin-top: 10px;
+    width: 95%;
+    height: 95%;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.sleepingVideo {
+    height: 80vh;
+}
+
+.sleepingVideo iframe {
+    margin-top: 10px;
+    width: 95%;
+    height: 95%;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.videoContainer {
+    background-color: black;
+}
+
+#videoWithText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+#videoWithText video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#videoText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+}
+
+#videoText h1 {
+    transition: opacity 3s;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+
+
+#liftingWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#liftingRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#liftingRow div {
+    width: 45%;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.muscleGroupsFlexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.muscleGroupsFlexRow div {
+    height: fit-content;
+    width: 49%;
+}
+
+.muscleGroupsFlexRow div iframe {
+    margin: 25px auto;
+    width: 100%;
+    height: 30vw;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+.informationMuscle {
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+}
+
+.nutritionFlexRows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nutritionFlexRows div {
+    width: 30%;
+}
+
+.styledTable {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styledTable thead tr {
+    background-color: #dcdcdc;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styledTable th,
+.styledTable td {
+    padding: 12px 15px;
+}
+
+.styledTable tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+.styledTable tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.styledTable tbody tr:last-of-type {
+    border-bottom: 2px solid #000000;
+}

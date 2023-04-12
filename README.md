@@ -1,2 +1,0 @@
-# TempleOfIron.com
-Macro Tracker

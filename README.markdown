@@ -1,1 +1,0 @@
-HTML Naming Convention BEM : https://css-tricks.com/bem-101/
