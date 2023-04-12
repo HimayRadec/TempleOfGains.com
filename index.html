@@ -1,113 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link rel="stylesheet" href="templeofgains.css">
-    <meta charset="utf-8">
-    <meta name="description" content="A Basic Guide To Lifting And Nutrition">
-    <meta name="keywords" content="Lifting, Nutrition, Gym, Sleep">
-    <script defer src="activePage.js"></script>
-    <title>
-        Temple Of Gains
-    </title>
+    <title>Temple of Iron | Home</title>
+    <link rel="stylesheet" href="CSS\styles.css">
 </head>
 
 <body>
-    <header class="navbar">
-        <h1 class="nav_links">
-            <a href="index.html">TEMPLE OF GAINS</a>
-        </h1>
-        <nav>
-            <ul class="nav_links">
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/supplements.html">Supplements</a>
-                </li>
-                <li>
-                    <a href="/lifting.html">Lifting</a>
-                </li>
-                <li>
-                    <a href="/nutrition.html">Nutrition</a>
-                </li>
-                <li>
-                    <a href="/sleep.html">Sleep</a>
-                </li>
-                <li>
-                    <a href="/muscleGroups.html"> Muscle Groups</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="button">
-            <a href="consultation.html">Free Consultation</a>
-        </div>
-    </header>
-    <div id="videoWithText">
+    <h1>Welcome to Temple of Iron!</h1>
+    <p>Welcome to Temple of Iron! We are a comprehensive resource for tracking your food macros and workouts. Our
+        easy-to-use platform allows you to log your daily food intake and exercise, set and track your macro goals, and
+        monitor your progress over time.
 
-        <video onloadstart="this.volume=0.2" id="introVideo" autoplay>
-            <source src="content/CinematicVideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        Whether you are trying to lose weight, build muscle, or maintain a healthy lifestyle, Temple of Iron has the
+        tools you need to succeed. With personalized recommendations, detailed analytics, and a community of like-minded
+        individuals, we provide the support and motivation you need to reach your fitness goals.
 
-        <div id="videoText">
-            <h1 id="videoTextUpper">IT TAKES 66 DAYS TO FORM A HABIT.</h1>
-            <h1 id="videoTextLower">MAKE IT A GOOD ONE.</h1>
-        </div>
-
-
-    </div>
-
-    <footer id="mainFooter">
-        <p> Designed by Himay Huerta</p>
-        <p><a href="mailto:jhuert11@asu.edu">jhuert11@asu.edu</a></p>
-    </footer>
-
-    <script>
-        var vid = document.getElementById('introVideo')
-        vid.muted = false;
-
-        document.getElementById('introVideo').addEventListener('play', hideText());
-
-        document.getElementById('videoWithText').addEventListener('click', () => {
-            toggleMute();
-        });
-
-        document.getElementById('introVideo').addEventListener('ended', () => {
-            displayText();
-            delayPlay();
-        });
-
-        function toggleMute() {
-            vid.muted = !vid.muted;
-        }
-
-        function displayText() {
-            videoTextUpper.style.opacity = '1';
-            videoTextUpper.style.transition = "opacity 2s linear";
-
-            setTimeout(function () {
-                videoTextLower.style.opacity = '1';
-                videoTextLower.style.transition = "opacity 2s linear";
-            }, 2500)
-        }
-
-        function delayPlay() {
-            setTimeout(function () {
-                document.getElementById('introVideo').play();
-                hideText();
-                vid.muted = true;
-            }, 12000);
-        }
-
-        function hideText() {
-            videoTextUpper.style.opacity = '0';
-            videoTextLower.style.opacity = '0';
-            videoTextUpper.style.transition = "opacity 0s linear";
-            videoTextLower.style.transition = "opacity 0s linear";
-        }
-
-    </script>
+        Join the Temple of Iron community today and start your journey towards a stronger, healthier you!</p>
+    <h2>How it works:</h2>
+    <ol>
+        <li>Sign up for an account on our website.</li>
+        <li>Enter your daily food intake and macro goals.</li>
+        <li>Track your progress and see how close you are to meeting your goals.</li>
+        <li>Log your workouts and see your stats over time.</li>
+        <li>Get personalized recommendations for adjusting your diet and workouts to meet your goals.</li>
+    </ol>
+    <p>With Temple of Iron, it's easy to stay on track with your nutrition and fitness goals. Simply log your food and
+        exercise, and our platform will do the rest! You'll be able to see how close you are to reaching your macro
+        goals and track your progress over time. Plus, with personalized recommendations and a community of like-minded
+        individuals, you'll have all the support and motivation you need to succeed. So, give it a try today and see the
+        results for yourself!</p>
+    <button>Sign Up</button>
 </body>
 
 </html>
